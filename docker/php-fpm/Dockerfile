@@ -1,9 +1,13 @@
 FROM php:7.3-fpm
 
-# Set working directory
-WORKDIR /var/www
+WORKDIR "/application"
 
-# Expose port 9000 and start php-fpm server
-EXPOSE 9000
+# Install selected extensions and other stuff
+RUN apt-get update \
+    && apt-get -y --no-install-recommends install  php-xdebug \
+    && apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
 
-CMD ["php-fpm"]
+# Install git
+RUN apt-get update \
+    && apt-get -y install git \
+    && apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
