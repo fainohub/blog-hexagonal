@@ -22,6 +22,7 @@
     },
     "autoload": {
         "psr-4": {
+            "Blog\\": "src/Blog",
             "Common\\": "src/Common"
         }
     },
