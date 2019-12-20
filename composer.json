@@ -1,0 +1,10 @@
+{
+    "name": "thiagofaino/blog-hexagonal",
+    "authors": [
+        {
+            "name": "Thiago Faino",
+            "email": "thiagofaino@gmail.com"
+        }
+    ],
+    "require": {}
+}

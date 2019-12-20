@@ -1,3 +1,10 @@
 <?php
 
-echo 'Index';
+class Car {
+
+    public $car = 'teste';
+}
+
+$car = new Car();
+
+echo $car->car;
