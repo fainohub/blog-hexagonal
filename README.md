@@ -1,3 +1,3 @@
 ## Blog Hexagonal
 
-Simples Blog desenvolvido em PHP utilizando arquitetura hexagonal
+An example of a modern PHP application with hexagonal architecture
