@@ -25,5 +25,8 @@ class UserTest extends TestCase
         $this->assertInstanceOf(Uuid::class, $user->id());
         $this->assertInstanceOf(Email::class, $user->email());
         $this->assertInstanceOf(UserToken::class, $user->token());
+        $this->assertSame($stub->id()->value(), $user->id()->value());
+        $this->assertSame($stub->email()->value(), $user->email()->value());
+        $this->assertSame($stub->token()->value(), $user->token()->value());
     }
 }
