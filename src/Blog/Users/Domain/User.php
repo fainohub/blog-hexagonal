@@ -4,6 +4,7 @@ declare(strict_types = 1);
 
 namespace Blog\Users\Domain;
 
+use Common\Domain\ValueObject\Uuid;
 use Common\Domain\ValueObject\Email;
 use Common\Domain\ValueObject\Password;
 
@@ -14,7 +15,7 @@ class User
     private $password;
     private $token;
 
-    public function __construct(UserId $id, Email $email, Password $password, UserToken $token)
+    public function __construct(Uuid $id, Email $email, Password $password, UserToken $token)
     {
         $this->id       = $id;
         $this->email    = $email;
@@ -22,7 +23,7 @@ class User
         $this->token    = $token;
     }
 
-    public function id(): UserId
+    public function id(): Uuid
     {
         return $this->id;
     }
@@ -40,9 +41,9 @@ class User
     public function toArray(): array
     {
         return [
-            'id'    => $this->id(),
-            'email' => $this->email(),
-            'token' => $this->token()
+            'id'    => $this->id()->value(),
+            'email' => $this->email()->value(),
+            'token' => $this->token()->value()
         ];
     }
 }
