@@ -15,12 +15,17 @@ class User
     private $password;
     private $token;
 
-    public function __construct(Uuid $id, Email $email, Password $password, UserToken $token)
+    private function __construct(Uuid $id, Email $email, Password $password, UserToken $token)
     {
         $this->id       = $id;
         $this->email    = $email;
         $this->password = $password;
         $this->token    = $token;
+    }
+
+    public static function create(Uuid $id, Email $email, Password $password, UserToken $token)
+    {
+        return new self($id, $email, $password, $token);
     }
 
     public function id(): Uuid
