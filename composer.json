@@ -11,6 +11,7 @@
     "require": {
         "php": "^7.3",
         "fzaninotto/faker": "^1.9",
+        "lambdish/phunctional": "^2.0",
         "ramsey/uuid": "^3.9"
     },
     "require-dev": {

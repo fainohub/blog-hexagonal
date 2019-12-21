@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d640858393c415d80ebafc0cfc8c53ba",
+    "content-hash": "5f628a754d2d5babb65c59f3e0713e35",
     "packages": [
         {
             "name": "fzaninotto/faker",
@@ -55,6 +55,61 @@
                 "fixtures"
             ],
             "time": "2019-12-12T13:22:17+00:00"
+        },
+        {
+            "name": "lambdish/phunctional",
+            "version": "v2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Lambdish/phunctional.git",
+                "reference": "d21bf670ef4e1bd5ba7fc94b6cd2ae30053d21b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Lambdish/phunctional/zipball/d21bf670ef4e1bd5ba7fc94b6cd2ae30053d21b4",
+                "reference": "d21bf670ef4e1bd5ba7fc94b6cd2ae30053d21b4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.11.16",
+                "phpunit/phpunit": "^8.4"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/_bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eloi Poch",
+                    "email": "eloi.poch@gmail.com"
+                },
+                {
+                    "name": "Jorge Ávila",
+                    "email": "avilacardenosa@gmail.com"
+                },
+                {
+                    "name": "Rafa Gómez",
+                    "email": "rgomezcasas@gmail.com"
+                }
+            ],
+            "description": "λ PHP functional library",
+            "keywords": [
+                "functional",
+                "generator",
+                "lambda",
+                "library",
+                "php"
+            ],
+            "time": "2019-12-08T23:46:38+00:00"
         },
         {
             "name": "paragonie/random_compat",
